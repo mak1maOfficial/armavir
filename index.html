@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#04120a" />
+<title>AG — Armavir Rules</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- КРАСИВЫЙ ФОН -->
+<div class="bg" aria-hidden="true">
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+  <div class="bg-glow glow-3"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-scanlines"></div>
+  <div class="bg-words" id="bgWords"></div>
+  <div class="bg-noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+</div>
+
+<!-- HEADER -->
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a href="#rules" class="brand" data-page="rules">
+      <span class="brand-mark">AG</span>
+      <span class="brand-text">
+        <b>AG COMMUNITY</b>
+        <i>Armavir Rules</i>
+      </span>
+    </a>
+
+    <nav class="nav" id="mainNav">
+      <a href="#rules"  class="nav-link is-active" data-page="rules">Правила</a>
+      <a href="#punish" class="nav-link" data-page="punish">Наказания</a>
+      <a href="#admin"  class="nav-link" data-page="admin">Администрация</a>
+    </nav>
+
+    <button class="sound-btn" id="soundBtn">
+      <span class="sound-dot"></span>
+      <span class="sound-text">SOUND ON</span>
+    </button>
+  </div>
+</header>
+
+<!-- СТРАНИЦЫ -->
+<main class="pages" id="pages">
+
+  <!-- ========== RULES ========== -->
+  <section class="page is-active" id="page-rules" data-page="rules">
+    <div class="page-inner rules-grid">
+
+      <div class="rules-left">
+        <div class="eyebrow"><span class="eyebrow-line"></span> WELCOME TO AG</div>
+
+        <h1 class="title">
+          <span class="t-white">ПРАВИЛА</span>
+          <span class="t-gradient">ARMAVIR СЕРВЕРА</span>
+        </h1>
+
+        <p class="lead">
+          Здесь собраны основные правила AG. Уважай участников, не мешай
+          другим общаться и сохраняй атмосферу сервера приятной для всех.
+        </p>
+
+        <div class="actions">
+          <button class="btn btn-light" data-scroll="rules-list">
+            Читать правила <span class="arr">→</span>
+          </button>
+          <button class="btn btn-dark" data-page="punish">
+            Система наказаний
+          </button>
+          <a class="btn btn-accent" id="discordBtn"
+             href="https://discord.gg/5SQavDXf6g"
+             target="_blank" rel="noopener noreferrer">
+            <span class="ico">💬</span> Discord сервер <span class="arr">↗</span>
+          </a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num">10</div>
+            <div class="stat-label">основных правил</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">3</div>
+            <div class="stat-label">уровня наказаний</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">24/7</div>
+            <div class="stat-label">порядок и модерация</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rules-right">
+        <div class="cube-scene">
+          <div class="cube-halo"></div>
+          <div class="cube">
+            <div class="cube-face front"><span>AG</span></div>
+            <div class="cube-face back"><span>AG</span></div>
+            <div class="cube-face right"><span>AG</span></div>
+            <div class="cube-face left"><span>AG</span></div>
+            <div class="cube-face top"><span>AG</span></div>
+            <div class="cube-face bottom"><span>AG</span></div>
+          </div>
+          <div class="cube-ring"></div>
+          <div class="cube-shadow"></div>
+          <div class="float-tag tag-respect">RESPECT</div>
+          <div class="float-tag tag-community">COMMUNITY</div>
+          <div class="float-tag tag-rules">RULES</div>
+        </div>
+
+        <div class="server-card">
+          <div class="server-status">
+            <span class="status-dot"></span>
+            <span class="status-text">SERVER ONLINE</span>
+          </div>
+          <div class="server-title">AG / RULEBOOK</div>
+          <div class="server-sub">Версия 1.0 · Armavir</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- СПИСОК ПРАВИЛ -->
+    <div class="rules-list" id="rules-list">
+      <div class="rules-list-inner">
+        <div class="eyebrow"><span class="eyebrow-line"></span> MAIN RULES</div>
+        <h2 class="section-title">Основные правила</h2>
+
+        <div class="rule-grid">
+          <article class="rule"><div class="rule-num">01</div><h3>Уважение к участникам</h3><p>Никаких оскорблений, травли, дискриминации и провокаций в адрес других игроков.</p></article>
+          <article class="rule"><div class="rule-num">02</div><h3>Без спама и флуда</h3><p>Не засоряй чаты сообщениями, не пиши капсом и не дублируй один и тот же текст.</p></article>
+          <article class="rule"><div class="rule-num">03</div><h3>Реклама запрещена</h3><p>Сторонние сервера, ссылки, читы и продажи — только с разрешения администрации.</p></article>
+          <article class="rule"><div class="rule-num">04</div><h3>Не мешай общению</h3><p>Не перебивай в голосовых каналах, не включай музыку без согласия участников.</p></article>
+          <article class="rule"><div class="rule-num">05</div><h3>Уважай приватность</h3><p>Не публикуй личные данные — свои или чужие. Скрины переписок — только по согласию.</p></article>
+          <article class="rule"><div class="rule-num">06</div><h3>Никакого NSFW</h3><p>Контент 18+, шок-контент и жестокость запрещены во всех каналах сервера.</p></article>
+          <article class="rule"><div class="rule-num">07</div><h3>Соблюдай темы каналов</h3><p>Пиши по теме. Флудилки — для флуда, а не для серьёзных обсуждений.</p></article>
+          <article class="rule"><div class="rule-num">08</div><h3>Не обходи наказания</h3><p>Обход мута, бана или таймаута с других аккаунтов — серьёзное нарушение.</p></article>
+          <article class="rule"><div class="rule-num">09</div><h3>Слушай администрацию</h3><p>Требования модераторов обязательны. Спорные ситуации решает старший состав.</p></article>
+          <article class="rule"><div class="rule-num">10</div><h3>Здравый смысл</h3><p>Если правило не описано, но действие вредит серверу — это тоже нарушение.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PUNISH ========== -->
+  <section class="page" id="page-punish" data-page="punish">
+    <div class="page-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span> MODERATION SYSTEM</div>
+      <h1 class="page-title">Система Наказаний</h1>
+      <p class="lead">Срок зависит от ситуации, повторных нарушений и тяжести проступка.</p>
+
+      <div class="punish-grid">
+        <article class="punish-card">
+          <div class="punish-level">LEVEL 01</div>
+          <h3>Предупреждение</h3>
+          <p>Для лёгких или первых нарушений. Модератор объясняет, что именно было нарушено.</p>
+          <div class="punish-tag tag-warn">WARN</div>
+        </article>
+
+        <article class="punish-card">
+          <div class="punish-level">LEVEL 02</div>
+          <h3>Мут / таймаут</h3>
+          <p>За повторные нарушения, флуд, конфликты, токсичность или помехи в голосовых каналах.</p>
+          <div class="punish-tag tag-mute">MUTE</div>
+        </article>
+
+        <article class="punish-card">
+          <div class="punish-level">LEVEL 03</div>
+          <h3>Блокировка</h3>
+          <p>За серьёзные нарушения, обход наказаний, вредоносный контент и систематический саботаж.</p>
+          <div class="punish-tag tag-ban">BAN</div>
+        </article>
+      </div>
+
+      <div class="help-card">
+        <div class="help-left">
+          <div class="eyebrow"><span class="eyebrow-line"></span> NEED HELP?</div>
+          <h3 class="help-title">Есть вопрос по правилам?</h3>
+          <p>Обратись к администрации AG. Главное — спокойно опиши ситуацию и приложи доказательства, если они есть.</p>
+        </div>
+        <div class="help-right">
+          <button class="btn btn-light" id="copyPhraseBtn">Скопировать фразу</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ADMIN ========== -->
+  <section class="page" id="page-admin" data-page="admin">
+    <div class="page-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span> STAFF TEAM</div>
+      <h1 class="page-title">Администрация</h1>
+      <p class="lead">Команда, которая следит за порядком, помогает участникам и развивает AG.</p>
+
+      <div class="admin-grid">
+        <article class="admin-card"><div class="admin-avatar">AG</div><h3>Owner</h3><p>Основатель проекта. Финальное слово по любым вопросам сервера.</p><div class="admin-tag">OWNER</div></article>
+        <article class="admin-card"><div class="admin-avatar">AG</div><h3>Head Moderator</h3><p>Руководит составом модераторов и решает сложные спорные ситуации.</p><div class="admin-tag">HEAD</div></article>
+        <article class="admin-card"><div class="admin-avatar">AG</div><h3>Moderator</h3><p>Следит за чатами и голосовыми каналами, выдаёт наказания по правилам.</p><div class="admin-tag">MOD</div></article>
+        <article class="admin-card"><div class="admin-avatar">AG</div><h3>Support</h3><p>Помогает участникам с вопросами, тикетами и техническими проблемами.</p><div class="admin-tag">SUPPORT</div></article>
+      </div>
+
+      <div class="help-card">
+        <div class="help-left">
+          <div class="eyebrow"><span class="eyebrow-line"></span> CONTACT</div>
+          <h3 class="help-title">Хочешь в команду?</h3>
+          <p>Отправь заявку через тикет в Discord. Укажи опыт, возраст и мотивацию.</p>
+        </div>
+        <div class="help-right">
+          <button class="btn btn-accent" id="applyBtn">Отправить заявку</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ФУТЕР -->
+<footer class="footer" id="footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <span class="footer-mark">AG</span>
+      <span class="footer-copy">AG Community © 2026 · Armavir Rules</span>
+    </div>
+    <div class="footer-right">
+      <button class="footer-top" id="toTopBtn">Наверх ↑</button>
+    </div>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
